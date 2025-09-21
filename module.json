@@ -1,0 +1,29 @@
+{
+    "id": "amnesia",
+    "title": "Amnesia",
+    "description": "A Foundry VTT module to manage hidden skills for Call of Cthulhu 7th Edition characters which only allows characters to see their true skill values during after rolling them.",
+    "version": "1.0.0",
+    "system": ["CoC7"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Alday",
+            "url": "https://github.com/JamesAlday"
+        }
+    ],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "packs": [],
+    "esmodules": [
+        "scripts/amnesia.js"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ]
+}
