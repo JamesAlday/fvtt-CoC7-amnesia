@@ -33,7 +33,7 @@ export const resetSkillsMacro = async () => {
         }
         console.log(`« Amnesia » | Reset skills for ${actor.name}`);
       }
-      ui.notifications.info(`Skills reset for ${selectedIds.length} character(s).`);
+      ui.notifications.info(`« Amnesia » | Skills reset for ${selectedIds.length} character(s).`);
     }
   
     new Dialog({

@@ -1,5 +1,11 @@
 async function loadHiddenSkills(actor) {
     const jsonPath = game.settings.get("amnesia", "characterJsonPath");
+
+    if (!jsonPath) {
+        ui.notifications.error("« Amnesia » | JSON path is not set in module settings. Please configure it before using this feature.");
+        return null; // Return null to indicate an error
+    }
+
     const filePath = `${jsonPath}/${actor.name}.json`;
 
     if (game.Amnesia.debug) console.log(`« Amnesia » | Loading hidden skills from: ${filePath}`, jsonPath);
@@ -20,7 +26,7 @@ async function loadHiddenSkills(actor) {
         return game.Amnesia.hiddenSkillCache[actor.id];
     } catch (err) {
         console.error(`« Amnesia » | Failed to load hidden skills for ${actor.name}:`, err);
-        return {};
+        return []; 
     }
 }
 
@@ -41,6 +47,8 @@ export async function handleSkillClick(app, event) {
     if (!skillItem) return;
     
     const hiddenSkills = await loadHiddenSkills(actor);
+
+    if (!hiddenSkills) return;
     
     const trueValueObj = hiddenSkills.find(hiddenSkill => {
         const mainName = skillItem.system?.skillName ? skillItem.system.skillName : skillItem.name;
