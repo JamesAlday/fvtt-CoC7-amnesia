@@ -25,5 +25,7 @@
             "name": "English",
             "path": "lang/en.json"
         }
-    ]
+    ],
+    "manifest": "https://raw.githubusercontent.com/JamesAlday/fvtt-CoC7-amnesia/refs/heads/master/module.json",
+    "download": "https://github.com/JamesAlday/fvtt-CoC7-amnesia/archive/refs/heads/master.zip"
 }
