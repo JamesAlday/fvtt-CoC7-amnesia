@@ -57,8 +57,8 @@ I wrote this module after playing the *Forget Me Not* scenario from *The Things 
 
 ## Compatibility
 
-- **System**: Call of Cthulhu 7th Edition (CoC7e)
-- **Foundry VTT Version**: Compatible with Foundry VTT version 12 and above.
+- **System**: Call of Cthulhu 7th Edition (CoC7e) 8.x (tested against v8.15)
+- **Foundry VTT Version**: Compatible with Foundry VTT version 13 and above (tested against v14.365).
 
 ---
 

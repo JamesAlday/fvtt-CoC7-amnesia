@@ -2,8 +2,7 @@
     "id": "amnesia",
     "title": "Amnesia",
     "description": "A Foundry VTT module to manage hidden skills for Call of Cthulhu 7th Edition characters which only allows characters to see their true skill values during after rolling them.",
-    "version": "1.0.0",
-    "system": ["CoC7"],
+    "version": "2.0.0",
     "license": "MIT",
     "authors": [
         {
@@ -12,8 +11,20 @@
         }
     ],
     "compatibility": {
-        "minimum": "12",
-        "verified": "12"
+        "minimum": "13",
+        "verified": "14"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "CoC7",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "8.15",
+                    "verified": "8.15"
+                }
+            }
+        ]
     },
     "packs": [],
     "esmodules": [
